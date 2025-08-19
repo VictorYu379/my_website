@@ -327,6 +327,17 @@ body {
     margin: 0;
 }
 
+.certificate-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.certificate-link:hover {
+    transform: scale(1.05);
+}
+
 /* Footer */
 .footer {
     background: rgba(0, 0, 0, 0.3);

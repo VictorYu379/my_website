@@ -1,7 +1,23 @@
 // Add smooth scrolling and interactive functionality
 document.addEventListener('DOMContentLoaded', function () {
 
+    // Google Analytics: Track project clicks
+    function trackEvent(category, action, label = null) {
+        if (typeof gtag !== 'undefined') {
+            gtag('event', action, {
+                'event_category': category,
+                'event_label': label
+            });
+        }
+    }
 
+    // Track project card clicks
+    const projectContainer = document.querySelector('.project-container');
+    if (projectContainer) {
+        projectContainer.addEventListener('click', function() {
+            trackEvent('engagement', 'project_click', 'data_analysis_agent');
+        });
+    }
 
     // Add click handlers for project cards
     const projectCards = document.querySelectorAll('.project-card');
