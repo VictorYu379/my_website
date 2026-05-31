@@ -1,6 +1,18 @@
 // Add smooth scrolling and interactive functionality
 document.addEventListener('DOMContentLoaded', function () {
 
+    // Background carousel: rotate slides every 5s, no user interaction
+    const slides = document.querySelectorAll('.profile-carousel .carousel-slide');
+    if (slides.length > 1) {
+        let current = 0;
+        setInterval(() => {
+            slides[current].classList.remove('active');
+            current = (current + 1) % slides.length;
+            slides[current].classList.add('active');
+        }, 3500);
+    }
+
+
     // Google Analytics: Track project clicks
     function trackEvent(category, action, label = null) {
         if (typeof gtag !== 'undefined') {

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jingkai Yu - AI Developer</title>
+    <title>Jingkai Yu - AI for sports</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
@@ -24,6 +24,15 @@
     <main class="container">
         <!-- Profile Section -->
         <section class="profile-section">
+            <div class="profile-carousel" aria-hidden="true">
+                <img src="assets/bg_img/Image_20260531123955_35_19.jpg" class="carousel-slide active" alt="">
+                <img src="assets/bg_img/Image_20260531124327_37_19.jpg" class="carousel-slide" alt="">
+                <img src="assets/bg_img/Image_20260531124439_38_19.jpg" class="carousel-slide" alt="">
+                <img src="assets/bg_img/Image_20260531124617_39_19.jpg" class="carousel-slide" alt="">
+                <img src="assets/bg_img/Image_20260531124953_41_19.jpg" class="carousel-slide" alt="">
+                <img src="assets/bg_img/Image_20260531124955_42_19.jpg" class="carousel-slide" alt="">
+                <div class="profile-carousel-overlay"></div>
+            </div>
             <div class="profile-image-container">
                 <div class="profile-image">
                     <img src="assets/Yu_Jingkai_profile.jpg" alt="Jingkai Yu Profile Photo" class="profile-img">
@@ -36,10 +45,11 @@
             </header>
 
             <div class="profile-content">
-                <h3 class="subtitle">Building AI Solutions to Transform Industries</h3>
+                <h3 class="subtitle">Building AI for Sports</h3>
                 <p class="description">
-                    I am a seasoned software engineer with over 3 years of professional software engineering experience,
-                    specializing in AI Agent, LLM, distributed systems and data storage.
+                    I am a seasoned software engineer with 4 years of professional software engineering experience,
+                    now focused on applying AI to sports — from performance analytics and computer vision on game
+                    footage to AI agents that surface insights for athletes, coaches, and fans.
                 </p>
             </div>
         </section>
@@ -47,7 +57,20 @@
         <!-- Projects Section -->
         <section class="projects-section">
             <h2 class="section-title">PROJECTS</h2>
-            <a href="https://sightfulagent.com/" class="project-container" target="_blank">
+            <a href="https://football-llm-benchmark.github.io/single-frame-player-localization/" class="project-container" target="_blank">
+                <div class="project-image-frame">
+                    <img src="assets/background.png" alt="Football LLM Benchmark" class="project-image project-image-fit-height">
+                </div>
+                <div class="project-text-frame">
+                    <h3 class="project-name project-name-nowrap">Football LLM Benchmark</h3>
+                    <p class="project-description">A benchmark suite for evaluating multimodal LLMs on football
+                        understanding. The first task — single-frame player localization — measures how accurately
+                        models can pinpoint every player in a broadcast frame, a foundation for downstream tactical
+                        analysis and automated commentary.</p>
+                    <div class="fake-button">View Benchmark ↗</div>
+                </div>
+            </a>
+            <a href="https://vizzorai.com/" class="project-container" target="_blank" style="margin-top: 40px;">
                 <div class="project-image-frame">
                     <div class="project-visual-demo">
                         <div class="inputs-section">
@@ -69,7 +92,7 @@
                     </div>
                 </div>
                 <div class="project-text-frame">
-                    <h3 class="project-name">Data Analysis Agent</h3>
+                    <h3 class="project-name">Vizzora</h3>
                     <p class="project-description">An AI-powered platform that transforms how industries approach data
                         analysis. Built with cutting-edge AI Agent and LLM technologies to provide intelligent insights
                         and automated data processing solutions.</p>
